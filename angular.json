@@ -3,19 +3,9 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "demo-app": {
+    "MarvellousFirst": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "standalone": false
-        },
-        "@schematics/angular:directive": {
-          "standalone": false
-        },
-        "@schematics/angular:pipe": {
-          "standalone": false
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -23,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/demo-app",
+            "outputPath": "dist/marvellous-first",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -72,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "demo-app:build:production"
+              "buildTarget": "MarvellousFirst:build:production"
             },
             "development": {
-              "buildTarget": "demo-app:build:development"
+              "buildTarget": "MarvellousFirst:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "demo-app:build"
+            "buildTarget": "MarvellousFirst:build"
           }
         },
         "test": {
